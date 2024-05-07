@@ -1,0 +1,22 @@
+.main {
+    background-color: cadetblue;
+}
+.headline {
+    color: darkgreen;
+}
+#center {
+    text-align: center;
+}
+#center strong {
+    color: blue;
+    background-color: yellow;
+}
+div p {
+    text-indent: 1em;
+}
+div p em {
+    color: green;
+}
+div p strong {
+    color: red;
+}

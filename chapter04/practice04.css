@@ -1,0 +1,18 @@
+.main {
+    background-color: cadetblue;
+}
+.headline {
+    color: brown;
+    text-align: center;
+    font-size: x-large;
+}
+div.help {
+    color: blue;
+}
+p.help {
+    color: red;
+    font-size: larger;
+}
+#hot {
+    background-color: chocolate;
+}

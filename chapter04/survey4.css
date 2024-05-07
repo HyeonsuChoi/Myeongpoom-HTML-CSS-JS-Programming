@@ -1,0 +1,31 @@
+/* 설문 사이트 크기 조정 및 배경 색 설정 */
+html,
+body {
+    background-color: aliceblue;
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+}
+/* 제목 색과 크기 지정 */
+h1 {
+    color: brown;
+    text-align: center;
+}
+/*폼 부분 배경 색 지정 */
+form {
+    background-color: lightpink;
+}
+/* 설문 요소 제목 색 지정 */
+form strong {
+    color: blue;
+}
+/* 각 설문 요소 여백 */
+div {
+    margin: 10px;
+}
+/* 푸터 부분 배경 색 지정 */
+footer {
+    background-color: orange;
+    padding: 0px 10px;
+    border-radius: 5px;
+}

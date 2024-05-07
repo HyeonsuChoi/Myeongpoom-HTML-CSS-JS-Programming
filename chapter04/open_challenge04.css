@@ -1,0 +1,40 @@
+/* 배경색 aliceblue */
+body {
+    background-color: aliceblue;
+}
+/* 제목 갈색, 가운데 정렬 */
+h1 {
+    color: brown;
+    text-align: center;
+}
+/* <header>의 아래쪽만 1픽셀의 직선 테두리 */
+header {
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+/* nav의 ul에 테두리 주기 */
+nav ul {
+    border-style: dotted;
+    border-width: 1px;
+}
+/* 하이퍼링트 데코레이션 삭제 */
+a {
+    text-decoration: none;
+}
+/* 소제목 색과 그림자 효과 */
+h2 {
+    color: blue;
+    text-shadow: 1px 1px 5px;
+}
+/* 본문 텍스트 들여쓰기, 사이즈, 폰트 조절 */
+p {
+    font-family: "휴먼 편지체";
+    text-indent: 1em;
+    font-size: 1em;
+}
+/* footer 영역 배경색 추가 */
+footer {
+    padding-left: 10px;
+    background-color: orange;
+    border-radius: 10px;
+}
