@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Math.random()으로 랜덤한 색 만들기</title>
+        <style>
+            div {
+                display: inline-block;
+                width: 150px;
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>Math.random()으로 랜덤한 색 만들기</h3>
+        <hr />
+        <script>
+            for (let i = 0; i < 16; i++) {
+                let r = Math.floor(Math.random() * 256);
+                let g = Math.floor(Math.random() * 256);
+                let b = Math.floor(Math.random() * 256);
+                let rgbList = `rgb(${r}, ${g}, ${b})`;
+
+                document.write(
+                    `<div style="background-color: ${rgbList};">${rgbList}</div>`
+                );
+            }
+        </script>
+    </body>
+</html>

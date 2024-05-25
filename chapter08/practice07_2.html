@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>transform:rotate()</title>
+    </head>
+    <body>
+        <h3>클릭하면 90도 회전합니다.</h3>
+        <hr />
+        <img onclick="rotate(this)" src="../media/spongebob.png" />
+        <script>
+            let deg = 0;
+            function rotate(obj) {
+                deg = (deg + 90) % 360;
+                obj.style.transform = `rotate(${deg}deg)`;
+            }
+        </script>
+    </body>
+</html>

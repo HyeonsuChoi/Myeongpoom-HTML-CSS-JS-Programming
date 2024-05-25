@@ -1,0 +1,8 @@
+ul {
+    background-color: aliceblue;
+    list-style-type: square;
+}
+li:hover {
+    background-color: yellowgreen;
+    margin-right: 10px;
+}

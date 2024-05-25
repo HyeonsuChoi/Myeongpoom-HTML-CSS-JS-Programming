@@ -1,0 +1,13 @@
+span {
+    border: 1px solid yellowgreen;
+    padding: 1px;
+}
+div h4 {
+    display: inline-block;
+    margin: 0 0 3px 0;
+    width: 200px;
+    border-bottom: 1px solid gray;
+}
+button:hover {
+    color: magenta;
+}

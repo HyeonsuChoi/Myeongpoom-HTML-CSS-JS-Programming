@@ -1,0 +1,24 @@
+div {
+    width: 300px;
+    border: 2px solid peru;
+}
+ol {
+    list-style-type: none;
+    padding: 0 20px 0 20px;
+}
+ol li {
+    font: bold italic 35px Helvetica;
+    padding-left: 5px;
+    margin-bottom: 10px;
+}
+ol li span {
+    position: absolute;
+    color: olivedrab;
+}
+ol li p {
+    font: 14px Helvetica, Sans-Serif;
+    padding-left: 50px;
+}
+div h3 {
+    text-align: center;
+}

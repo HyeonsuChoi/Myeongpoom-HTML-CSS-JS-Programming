@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Book 객체 만들기</title>
+    </head>
+    <body>
+        <h3>book 객체 만들기</h3>
+        <hr />
+        <script>
+            let bookArray = new Array(5);
+            for (let i = 0; i < 5; i++) {
+                bookArray[i] = new Object();
+                let str = prompt(
+                    "콤마(,)로 분리하면서 책제목, 저자, 가격 순으로 입력"
+                );
+                let strArray = str.split(",");
+                bookArray[i].title = strArray[0].trim();
+                bookArray[i].author = strArray[1].trim();
+                bookArray[i].price = strArray[2].trim();
+            }
+        </script>
+        <script>
+            for (let i = 0; i < 5; i++) {
+                document.write(
+                    bookArray[i].title +
+                        ", " +
+                        bookArray[i].author +
+                        ", " +
+                        bookArray[i].price
+                );
+                document.write("<br>");
+            }
+        </script>
+    </body>
+</html>

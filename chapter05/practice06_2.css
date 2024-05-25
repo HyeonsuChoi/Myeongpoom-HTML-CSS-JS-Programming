@@ -1,0 +1,13 @@
+@keyframes rotating {
+    from {
+        transform: rotate(-90deg);
+    }
+    to {
+        transform: rotate(90deg);
+    }
+}
+img {
+    animation-name: rotating;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}

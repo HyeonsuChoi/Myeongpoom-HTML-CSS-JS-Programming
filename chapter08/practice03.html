@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>visibility 프로퍼틴</title>
+        <style>
+            span {
+                visibility: hidden;
+                color: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <script>
+            function visible() {
+                let spanArr = document.getElementsByTagName("span");
+                for (let i = 0; i < spanArr.length; i++) {
+                    let span = spanArr[i];
+                    span.style.visibility = "visible";
+                }
+            }
+        </script>
+        <h3>
+            다음 빈 곳에 숨은 단어?
+            <button onclick="visible()">showhide</button>
+        </h3>
+        <hr />
+        <ul>
+            <li>i (<span>love</span>) you.</li>
+            <li>CSS is Cascading (<span>Style</span>) Sheet,</li>
+            <li>응답하라 (<span>1988</span>).</li>
+        </ul>
+    </body>
+</html>

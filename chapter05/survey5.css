@@ -1,0 +1,29 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+    width: 500px;
+    height: 465px;
+}
+header {
+    float: inline-start;
+    width: 100%;
+    height: 110px;
+    background-color: yellow;
+}
+header h1 {
+    text-align: center;
+}
+section {
+    height: 285px;
+    display: inline-block;
+    background-color: lightpink;
+    margin: 10px 10px;
+}
+section div {
+    margin-bottom: 10px;
+}
+footer {
+    padding: 13px 0;
+    background-color: mediumpurple;
+}

@@ -1,0 +1,9 @@
+ul {
+    background-image: url(../media/worldmap.jpg);
+    width: 500px;
+    list-style-type: square;
+}
+li:hover {
+    background-color: yellowgreen;
+    margin-right: 10px;
+}

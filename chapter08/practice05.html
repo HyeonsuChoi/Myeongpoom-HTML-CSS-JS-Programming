@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>z-index 스타일 프로퍼티</title>
+        <style>
+            div {
+                position: absolute;
+            }
+            img {
+                position: absolute;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>z-index 스타일 프로퍼티</h3>
+        <hr />
+        <div>
+            <img
+                onclick="change(this)"
+                float="left"
+                src="../media/spade-A.png"
+                width="100"
+                height="140"
+                alt="스페이드A"
+            />
+            <img
+                onclick="change(this)"
+                float="left"
+                src="../media/spade-2.png"
+                width="100"
+                height="140"
+                alt="스페이드2"
+            />
+            <img
+                onclick="change(this)"
+                float="left"
+                src="../media/spade-3.png"
+                width="100"
+                height="140"
+                alt="스페이드3"
+            />
+            <img
+                onclick="change(this)"
+                float="left"
+                src="../media/spade-7.png"
+                width="100"
+                height="140"
+                alt="스페이드7"
+            />
+        </div>
+        <script>
+            let imgArr = document.getElementsByTagName("img");
+            for (let i = 0; i < imgArr.length; i++) {
+                let img = imgArr[i];
+                img.style.zIndex = i;
+            }
+            function change(clickedImg) {
+                let currentZIndex = parseInt(clickedImg.style.zIndex);
+                for (let i = 0; i < imgArr.length; i++) {
+                    let img = imgArr[i];
+                    if (
+                        img !== clickedImg &&
+                        parseInt(img.style.zIndex) < currentZIndex
+                    ) {
+                        img.style.zIndex = parseInt(img.style.zIndex) + 1;
+                    }
+                }
+                clickedImg.style.zIndex = 0;
+            }
+        </script>
+    </body>
+</html>
